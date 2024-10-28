@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #D7B520;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#fejlec {
+    background-image: url('img/fejlec.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    width: 100%;
+    border: 1px solid brown;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+aside {
+    width: 30%;
+    margin: 10px;
+    border: 1px solid brown;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+nav li {
+    margin-bottom: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f3f3f3;
+}
+
+form {
+    margin-top: 20px;
+}
+
+form h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+form label {
+    font-style: italic;
+    margin-top: 10px;
+    display: block;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #333;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+main {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+section {
+    border: 1px solid brown;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+section img {
+    width: 30%;
+    border-radius: 10px;
+    height: auto;  
+    object-fit:contain; 
+    float: left;
+    margin: right;
+}
+
+section h2 {
+    font-size: 1.2em;
+}
+
+section p {
+    text-align: justify;
+}
+
+/* Reszponzív beállítások */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    aside {
+        width: 100%;
+    }
+    
+    main {
+        width: 100%;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+    }
+
+    nav li {
+        margin: 0;
+    }
+}
